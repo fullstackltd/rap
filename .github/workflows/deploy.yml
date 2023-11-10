@@ -19,9 +19,4 @@ jobs:
         run: npm run build
         shell: bash
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.4
-        with:
-          branch: gh-pages
-          folder: dist
-          clean: true
-          token: ${{ secrets.GITHUB_TOKEN }}
+        uses: bitovi/github-actions-react-to-github-pages@v1.2.1
